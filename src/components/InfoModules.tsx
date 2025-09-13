@@ -107,9 +107,11 @@ export const InfoModules = () => {
                 ))}
               </ul>
               
-              <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
-                <HelpCircle className="h-4 w-4 mr-2" />
-                Ask Questions
+              <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-smooth" asChild>
+                <a href="#chat">
+                  <HelpCircle className="h-4 w-4 mr-2" />
+                  Ask Questions
+                </a>
               </Button>
             </Card>
           ))}

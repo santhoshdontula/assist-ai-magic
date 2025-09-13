@@ -31,9 +31,11 @@ const Index = () => {
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-smooth">Features</a>
             <a href="#modules" className="text-muted-foreground hover:text-foreground transition-smooth">Modules</a>
             <a href="#chat" className="text-muted-foreground hover:text-foreground transition-smooth">Try Assistant</a>
-            <Button variant="hero" size="sm">
-              Get Started
-              <ArrowRight className="h-4 w-4" />
+            <Button variant="hero" size="sm" asChild>
+              <a href="#chat">
+                Get Started
+                <ArrowRight className="h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>
@@ -60,12 +62,16 @@ const Index = () => {
               </div>
               
               <div className="flex flex-wrap gap-4">
-                <Button variant="hero" size="xl">
-                  <MessageSquare className="h-5 w-5" />
-                  Start Chatting
+                <Button variant="hero" size="xl" asChild>
+                  <a href="#chat">
+                    <MessageSquare className="h-5 w-5" />
+                    Start Chatting
+                  </a>
                 </Button>
-                <Button variant="outline" size="xl">
-                  Explore Features
+                <Button variant="outline" size="xl" asChild>
+                  <a href="#modules">
+                    Explore Features
+                  </a>
                 </Button>
               </div>
               
